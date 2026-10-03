@@ -60,8 +60,11 @@ With beta nonzero the `D := beta * op_C(C)` pass costs 20-50% of faer's time on
 large outputs with small K, where faer then loses to packed at 4T/8T. The
 planner therefore sends a separate C to faer only for K >= 512 or at most 2^20
 output elements (workload under the rule 1.06-1.19 at 4T/8T; `decision.txt`).
-Three cases that were overwrite wins flip to losses under that rule at 8T
-(`gemm_batched_041/043/044`, outputs of 220-330K elements, K 7-11; 0.78-0.89).
+Three cases that were overwrite wins flipped to losses under that first rule at 8T
+(`gemm_batched_041/043/044`, outputs of 220-330K elements, K 7-11; 0.78-0.89);
+W2b ([`results/2026-10-03-phase2-w2b/`](results/2026-10-03-phase2-w2b/decision.txt))
+replaced it by a stricter rule and routes `beta == 0` to faer through a second,
+lazily dispatched fusion: no faer-routed case measured below 0.93.
 No A/A run (host shared); packed rows of two sessions agree within 2%.
 
 ### 2026-10-01 switchable GEMM engine: non-regression

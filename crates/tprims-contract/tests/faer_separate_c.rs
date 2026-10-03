@@ -246,8 +246,7 @@ fn beta_zero_does_not_read_a_separate_c() {
         for source in [Source::SameLayout, Source::OtherLayout] {
             for bits in [0u32, 15] {
                 let flags = [bits & 1 != 0, bits & 2 != 0, bits & 4 != 0, bits & 8 != 0];
-                let routes =
-                    check::<C64>(&shape, source, flags, C64::new(0.7, -0.3), zero, true);
+                let routes = check::<C64>(&shape, source, flags, C64::new(0.7, -0.3), zero, true);
                 assert_eq!(routes.0, Algorithm::Faer, "{}", shape.name);
             }
         }
@@ -302,8 +301,7 @@ fn matmul_problem(m: usize, n: usize, k: usize, separate: bool) -> Problem {
 #[test]
 fn a_separate_c_on_a_large_output_with_small_k_is_packed_with_a_faer_beta_zero_route() {
     let routes = |m, n, k, sep| {
-        let plan =
-            Plan::<f64>::new(&matmul_problem(m, n, k, sep), &PlanConfig::default()).unwrap();
+        let plan = Plan::<f64>::new(&matmul_problem(m, n, k, sep), &PlanConfig::default()).unwrap();
         (plan.report().algorithm, plan.report().beta_zero)
     };
     let packed = (Algorithm::Packed, Some(Algorithm::Faer));
@@ -346,5 +344,12 @@ fn both_routes_of_a_split_plan_match_the_oracle() {
     }
     // The in-place C (C is D) takes the same split.
     check::<C64>(&shape, Source::InPlace, [false; 4], one, zero, false);
-    check::<C64>(&shape, Source::InPlace, [true; 4], one, C64::new(0.5, 0.5), false);
+    check::<C64>(
+        &shape,
+        Source::InPlace,
+        [true; 4],
+        one,
+        C64::new(0.5, 0.5),
+        false,
+    );
 }
