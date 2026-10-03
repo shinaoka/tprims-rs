@@ -116,6 +116,9 @@ enum Strategy<T: Scalar> {
 pub struct Plan<T: Scalar> {
     problem: Problem,
     strategy: Strategy<T>,
+    /// The faer fusion that serves `beta == 0` when `strategy` is packed only
+    /// because a nonzero `beta` would cost faer an output pass.
+    faer_b0: Option<FaerPlan>,
     /// The pass over the output's elements: `alpha == 0` and empty `K`.
     output: ElementPlan,
     report: PlanReport,
@@ -187,12 +190,18 @@ impl<T: Scalar> Plan<T> {
         }
         config.validate()?;
         let packed = config.requires_packed() || selection.is_some();
+        let mut faer_b0 = None;
         let strategy = if packed {
             Strategy::Packed(Box::new(Self::plan_packed(problem, config, selection)?))
         } else if problem.all_batch() {
             Strategy::Elementwise(ElementPlan::product(problem))
         } else if let Some(f) = faer_strategy::plan(problem) {
-            Strategy::Faer(f)
+            if f.any_beta {
+                Strategy::Faer(f.plan)
+            } else {
+                faer_b0 = Some(f.plan);
+                Strategy::Packed(Box::new(Self::plan_packed(problem, config, None)?))
+            }
         } else {
             Strategy::Packed(Box::new(Self::plan_packed(problem, config, None)?))
         };
@@ -205,12 +214,14 @@ impl<T: Scalar> Plan<T> {
             output: ElementPlan::output(problem),
             report: PlanReport {
                 algorithm,
+                beta_zero: faer_b0.as_ref().map(|_| Algorithm::Faer),
                 materialized: [false; 3],
                 packed: packed_report,
             },
             diagnostics: Diagnostics::new("tprims-contract", algorithm.name()),
             problem: problem.clone(),
             strategy,
+            faer_b0,
             workspace: ArenaProvider::new(),
             _t: PhantomData,
         })
@@ -521,6 +532,42 @@ impl<T: Scalar> Plan<T> {
             unsafe { self.output.run(exec, expr, Inputs::None, c, d) }?;
             return Ok(());
         }
+        // One branch per call: a plan that is packed only for `beta != 0`
+        // runs faer when no C term is read.
+        let faer = match &self.strategy {
+            Strategy::Faer(f) => Some(f),
+            Strategy::Packed(_) if beta == zero => self.faer_b0.as_ref(),
+            _ => None,
+        };
+        if let Some(f) = faer {
+            // The C term goes into D first, in one parallel output-sized
+            // pass (not an operand copy; see `strategy::faer`), and faer
+            // accumulates the product. D itself (in place, or a separate C
+            // that is the same mapping at D's origin) needs the pass only
+            // when `beta` and the conjugations are not the identity;
+            // `beta == 0` reads no C and faer overwrites D.
+            let accumulate = match c {
+                CRead::None => false,
+                _ if beta == zero => false,
+                CRead::Separate(cp) if !core::ptr::eq(cp, d) => {
+                    // SAFETY: the caller's contract (C disjoint from D).
+                    unsafe { self.output.run(exec, expr, Inputs::None, c, d) }?;
+                    true
+                }
+                _ => {
+                    let identity = beta == <T as Element>::one() && !conj_c && !conj_d;
+                    if !identity {
+                        // SAFETY: the caller's contract; in-place update of D.
+                        unsafe { self.output.run(exec, expr, Inputs::None, CRead::InPlace, d) }?;
+                    }
+                    true
+                }
+            };
+            // SAFETY: the caller's contract; the fusion was proven copy-free
+            // over exactly this problem's layouts.
+            unsafe { f.run(exec, alpha, a, b, accumulate, d) };
+            return Ok(());
+        }
         match &self.strategy {
             Strategy::Packed(pk) => {
                 let exec = exec.with_budget(self.width(exec)).unwrap_or(*exec);
@@ -549,36 +596,7 @@ impl<T: Scalar> Plan<T> {
                     )
                 };
             }
-            Strategy::Faer(f) => {
-                // The C term goes into D first, in one parallel output-sized
-                // pass (not an operand copy; see `strategy::faer`), and faer
-                // accumulates the product. D itself (in place, or a separate C
-                // that is the same mapping at D's origin) needs the pass only
-                // when `beta` and the conjugations are not the identity;
-                // `beta == 0` reads no C and faer overwrites D.
-                let accumulate = match c {
-                    CRead::None => false,
-                    _ if beta == zero => false,
-                    CRead::Separate(cp) if !core::ptr::eq(cp, d) => {
-                        // SAFETY: the caller's contract (C disjoint from D).
-                        unsafe { self.output.run(exec, expr, Inputs::None, c, d) }?;
-                        true
-                    }
-                    _ => {
-                        let identity = beta == <T as Element>::one() && !conj_c && !conj_d;
-                        if !identity {
-                            // SAFETY: the caller's contract; in-place update of D.
-                            unsafe {
-                                self.output.run(exec, expr, Inputs::None, CRead::InPlace, d)
-                            }?;
-                        }
-                        true
-                    }
-                };
-                // SAFETY: the caller's contract; the fusion was proven copy-free
-                // over exactly this problem's layouts.
-                unsafe { f.run(exec, alpha, a, b, accumulate, d) };
-            }
+            Strategy::Faer(_) => unreachable!("served above"),
             Strategy::Elementwise(e) => {
                 // SAFETY: the caller's contract.
                 unsafe { e.run(exec, expr, Inputs::Product(a, b), c, d) }?;

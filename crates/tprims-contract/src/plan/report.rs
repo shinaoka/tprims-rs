@@ -82,6 +82,12 @@ pub struct PackedReport {
 pub struct PlanReport {
     /// Which implementation runs.
     pub algorithm: Algorithm,
+    /// The route executions with `beta == 0` take when it differs from
+    /// [`algorithm`](Self::algorithm): a separately described C whose output
+    /// pass makes faer lose at `beta != 0` plans on the packed driver and
+    /// still runs faer when no C term is read. `None` when `algorithm` serves
+    /// every `beta`.
+    pub beta_zero: Option<Algorithm>,
     /// Which of A, B, C are copied into compact buffers on every execution.
     /// Always false here: no strategy of this crate copies a whole operand
     /// (bounded packing inside the packed driver is not a materialization).

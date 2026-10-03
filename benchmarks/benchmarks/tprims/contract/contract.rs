@@ -326,6 +326,9 @@ fn run<T: Scalar>(
             Some(p) => println!("# selected {name} {tag}: packed {}", p.family_id),
             None => println!("# selected {name} {tag}: {}", report.algorithm.name()),
         }
+        if let Some(b0) = report.beta_zero {
+            println!("# selected {name} {tag} beta0: {}", b0.name());
+        }
         let mut c = if mode == CMode::Overwrite {
             vec![<T as Element>::zero(); lc]
         } else {
