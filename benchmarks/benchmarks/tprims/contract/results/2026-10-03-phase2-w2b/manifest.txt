@@ -1,0 +1,7 @@
+bin=/tmp/claude-2000/-home-shinaoka-tensor4all/662178ee-cfce-467b-b6ba-c7a683ca4e5b/scratchpad/contract-w2b cpus=8,9,10,11,12,13,14,15 mode=separate_b1 corpus=large-batched-gemm sha=475f1f8be4c503b0 commit=2723cb1 2026-10-03T16:35:40Z
+bin=/tmp/claude-2000/-home-shinaoka-tensor4all/662178ee-cfce-467b-b6ba-c7a683ca4e5b/scratchpad/contract-w2b cpus=8,9,10,11,12,13,14,15 mode=separate_b0 corpus=tenferro-p1-gemm sha=b1663c77a5cb1e06 commit=2723cb1 2026-10-03T18:38:13Z
+bin=/tmp/claude-2000/-home-shinaoka-tensor4all/662178ee-cfce-467b-b6ba-c7a683ca4e5b/scratchpad/contract-w2b cpus=8,9,10,11,12,13,14,15 mode=separate_b1 corpus=tenferro-p1-gemm sha=b1663c77a5cb1e06 commit=2723cb1 2026-10-03T12:51:07Z
+host: AMD EPYC 7713P, CPUs 8-15 (one CCD) picked by idle_cpus.py; user itoh ran ~30 unpinned threads on the host throughout, so pinned.sh waited for windows (attempt counts in s1/pinned.err; 1T/4T/8T of a case can be hours apart). BENCH_RUNS=5, BENCH_WARMUP=3.
+binary: target/release/contract of the W2b commit (BENCH_C_MODE harness from W2 + a `beta0` line in `# selected`).
+A/A: no separate session. A case planned on packed at beta != 0 runs the same code in both rows, so those ratios are the A/A noise of the same session (see decision.txt).
+Not measured: separate_b0 beyond 1 case (host contention); the b0 route is the W2 faer path (accumulate=false, no output pass), whose results were measured in W2 (1.078/1.173/1.249 workload at 1T/4T/8T on tenferro-p1-gemm).

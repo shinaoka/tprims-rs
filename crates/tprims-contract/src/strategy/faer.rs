@@ -109,20 +109,26 @@ fn fuse_group(group: &[RoleAxis], carriers: &[OperandId]) -> Option<Fused> {
     })
 }
 
-/// Output elements up to which a separate C's output pass is cheap enough to
-/// leave the problem on faer whatever its K.
-const SEPARATE_C_MAX_OUT: usize = 1 << 20;
-/// Contracted extent from which the GEMM amortizes a separate C's output pass.
+/// Output elements up to which a separate C's output pass stays in cache and
+/// is cheap whatever the K.
+const SEPARATE_C_MAX_OUT: usize = 1 << 16;
+/// Contracted extent from which the GEMM amortizes a separate C's output pass,
+/// for operands in faer's native orientation (A unit stride along M).
 const SEPARATE_C_MIN_K: usize = 512;
 
-/// Whether a separately described C is worth routing to faer: a small output,
-/// or a K large enough that the extra pass over D is a small share of the work.
-/// Measured against the packed driver on the TAPP-style forms of the
-/// tenferro-p1 GEMM corpus
-/// (`benchmarks/benchmarks/tprims/contract/results/2026-10-03-phase2-w2/`).
-fn separate_c_pays(p: &Problem) -> bool {
+/// Whether faer also serves a separately described C at `beta != 0`, where D
+/// takes one extra output-sized pass before the product is accumulated.
+///
+/// Fitted on the measured TAPP-style rows (`separate_b1` and `separate_same`,
+/// 4T/8T, `tenferro-p1-gemm` and `large-batched-gemm`; results under
+/// `benchmarks/benchmarks/tprims/contract/results/2026-10-03-phase2-w2b/`);
+/// no admitted case measured below 0.92 of the packed driver. It admits:
+/// * a cache-resident output (at most 2^16 elements);
+/// * a K of at least 512 with A unit-stride along M (a transposed A loses to
+///   packed even without the pass);
+/// * a matrix-vector shape (M or N equal to 1), where packed is far slower.
+fn separate_c_pays(f: &FaerPlan, p: &Problem) -> bool {
     let r = p.roles();
-    let k: usize = r.k().iter().map(|x| x.extent()).product();
     let out = r
         .m()
         .iter()
@@ -130,26 +136,33 @@ fn separate_c_pays(p: &Problem) -> bool {
         .chain(r.h())
         .map(|x| x.extent())
         .fold(1usize, |a, e| a.saturating_mul(e));
-    k >= SEPARATE_C_MIN_K || out <= SEPARATE_C_MAX_OUT
+    out <= SEPARATE_C_MAX_OUT
+        || (f.k.extent >= SEPARATE_C_MIN_K && f.m.a == 1)
+        || f.m.extent == 1
+        || f.n.extent == 1
+}
+
+/// A fusion and where it may run.
+#[derive(Debug)]
+pub(crate) struct Planned {
+    pub(crate) plan: FaerPlan,
+    /// Faer serves executions with a nonzero `beta`. It is false only for a
+    /// separate C whose output pass would lose to the packed driver; such a
+    /// plan still serves `beta == 0`, which has no pass.
+    pub(crate) any_beta: bool,
 }
 
 /// The fusion of `p`, or `None` when this strategy cannot run it copy-free with
 /// full semantics.
-pub(crate) fn plan(p: &Problem) -> Option<FaerPlan> {
+pub(crate) fn plan(p: &Problem) -> Option<Planned> {
     let r = p.roles();
-    // A separate C costs an output pass whenever `beta != 0`, and `beta` is an
-    // execution argument. Where that pass is a large share of the work
-    // (a big output with a small K) the packed driver's fused epilogue wins.
-    if matches!(p.c_spec(), CSpec::Separate(_)) && !separate_c_pays(p) {
-        return None;
-    }
     // A reduction over an axis only one input carries has no matrix to hand
     // to faer without a broadcast copy.
     if r.k().iter().any(|x| !(x.in_a() && x.in_b())) {
         return None;
     }
     use OperandId::{A, B, D};
-    Some(FaerPlan {
+    let plan = FaerPlan {
         m: fuse_group(r.m(), &[A, D])?,
         n: fuse_group(r.n(), &[B, D])?,
         k: fuse_group(r.k(), &[A, B])?,
@@ -157,7 +170,12 @@ pub(crate) fn plan(p: &Problem) -> Option<FaerPlan> {
         conj_a: p.a().op().is_conj(),
         conj_b: p.b().op().is_conj(),
         conj_d: p.d().op().is_conj(),
-    })
+    };
+    // A separate C costs an output pass whenever `beta != 0`, and `beta` is an
+    // execution argument: the plan keeps the packed driver for those and uses
+    // faer for `beta == 0` (the dispatch is one branch per call).
+    let any_beta = !matches!(p.c_spec(), CSpec::Separate(_)) || separate_c_pays(&plan, p);
+    Some(Planned { plan, any_beta })
 }
 
 impl FaerPlan {

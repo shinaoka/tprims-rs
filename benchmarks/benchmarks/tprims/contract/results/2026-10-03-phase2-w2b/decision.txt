@@ -1,0 +1,31 @@
+# W2b results: tightened separate-C rule and lazy beta=0 faer route (Phase 2, #50)
+
+ratio = packed exec / plan exec (plan = the shipped planner), > 1 means the planner is faster. A planned-packed case runs identical code in both rows, so its ratio is the A/A noise of the session.
+
+s1 large-batched-gemm  separate_b1   1T n=16 faer= 8 workload packed/plan all=1.035 faer-routed=1.036  faer<0.95: 1  A/A on 8 packed-routed: mean 0.265 worst x2.03
+      large_b1_m4096_n4096_k4096_f64: 0.94 (faer 3974671us)
+s1 large-batched-gemm  separate_b1   4T n=16 faer= 8 workload packed/plan all=1.109 faer-routed=1.124  faer<0.95: 0  A/A on 8 packed-routed: mean 0.101 worst x1.53
+s1 large-batched-gemm  separate_b1   8T n=16 faer= 8 workload packed/plan all=1.109 faer-routed=1.123  faer<0.95: 1  A/A on 8 packed-routed: mean 0.060 worst x1.37
+      large_b16_m512_n512_k512_f64: 0.95 (faer 29229us)
+s1 tenferro-p1-gemm    separate_b0   1T n= 1 faer= 1 workload packed/plan all=1.051 faer-routed=1.051  faer<0.95: 0  A/A on 0 packed-routed: mean nan worst x1.00
+s1 tenferro-p1-gemm    separate_b0   4T n= 1 faer= 1 workload packed/plan all=1.112 faer-routed=1.112  faer<0.95: 0  A/A on 0 packed-routed: mean nan worst x1.00
+s1 tenferro-p1-gemm    separate_b1   1T n=53 faer=24 workload packed/plan all=0.953 faer-routed=1.011  faer<0.95: 1  A/A on 29 packed-routed: mean 0.191 worst x3.44
+      gemm_batched_004_f64: 0.93 (faer 744531us)
+s1 tenferro-p1-gemm    separate_b1   4T n=53 faer=24 workload packed/plan all=1.061 faer-routed=1.149  faer<0.95: 0  A/A on 29 packed-routed: mean 0.153 worst x2.42
+s1 tenferro-p1-gemm    separate_b1   8T n=53 faer=24 workload packed/plan all=1.056 faer-routed=1.155  faer<0.95: 0  A/A on 29 packed-routed: mean 0.145 worst x2.20
+
+## Rule check on the W2 rows (unconditional-faer measurements, b1 and same, 4T/8T)
+old (W2): K>=512 or out<=2^20: admits 38 of 68 measured cases; cases below 0.92 (b1 4T/8T, same 4T/8T): 6
+    ('_017_f64', 1024, 1048576, [0.71, 0.81, 0.71, 0.7])
+    ('_032_f64', 128, 524288, [0.97, 0.88, 1.03, 0.95])
+    ('_041_f64', 7, 223552, [1.07, 0.89, 0.91, 0.81])
+    ('_042_f64', 11, 334400, [0.91, 0.92, 0.99, 0.71])
+    ('_043_f64', 11, 334400, [1.03, 0.78, 0.85, 0.69])
+    ('_044_f64', 7, 223552, [1.17, 0.86, 0.87, 0.79])
+new (W2b): admits 32 of 68 measured cases; cases below 0.92 (b1 4T/8T, same 4T/8T): 0
+
+## Decision
+- Rule (one function, strategy/faer.rs `separate_c_pays`): a separate C goes to faer for every beta when out <= 2^16, or K >= 512 with A unit-stride along M, or M == 1 or N == 1. Otherwise the plan is packed for beta != 0 and keeps a faer route for beta == 0 (PlanReport::beta_zero = Some(Faer)); one branch on `beta == 0` per call.
+- Fitted on the W2 rows: the old rule admitted six cases below 0.92 (017, 032, 041, 042, 043, 044); the new one admits none, at the cost of declining wins such as gemm_batched_047 (out 158400, M = 1 is kept by the matvec arm) and the 2^16..2^20 outputs with K < 512 that happened to win.
+- Confirmation (s1 above, loaded host): no faer-routed case below 0.93 at any width (0.93/0.94/0.95 = within the 6-26% A/A of the same session); faer-routed workload packed/plan 1.01-1.16.
+- Caveats: one session, host shared with unpinned jobs (A/A of identical code up to x1.4-3 on single cases), b0 measured on 1 case only (equivalence with W2 b0), thresholds fit on f64 plus the large-batched c64 entries.

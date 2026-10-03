@@ -71,10 +71,15 @@ neutral or negative result is recorded and reverted.
   overwrites D and never reads C. The pass is output-sized, not an operand
   normalization: A, B and C are not copied, packed or reordered, so
   `no_materialize` semantics and `PlanReport::materialized` are unchanged.
-  A separate C goes to faer when K >= 512 or the output has at most 2^20
-  elements (measured; results under `results/2026-10-03-phase2-w2/`); a large
-  output with small K stays packed because the pass costs 20-50% of faer's
-  time there. `beta` is an execution argument, so the rule cannot depend on it.
+  W2b replaced the first rule (K >= 512 or at most 2^20 outputs, which
+  admitted six cases at 0.69-0.92 of packed) with one measured function,
+  `separate_c_pays`: a separate C goes to faer for every beta when the output
+  has at most 2^16 elements, or K >= 512 with A unit-stride along M, or M or N
+  is 1. Otherwise the plan is packed for `beta != 0` (the output pass costs
+  20-50% of faer's time on a large output with small K) and keeps a faer
+  fusion for `beta == 0`, chosen by one branch per call and reported as
+  `PlanReport::beta_zero`. Results under
+  `results/2026-10-03-phase2-w2/` and `results/2026-10-03-phase2-w2b/`.
   An isolated one-input K axis stays on packed.
 
 **W3. Packed-driver codegen for its own domain.** These are causes 1 and

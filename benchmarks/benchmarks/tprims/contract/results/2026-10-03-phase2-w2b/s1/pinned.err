@@ -1,0 +1,927 @@
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 3)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 4)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 5)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 6)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 7)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 8)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 9)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_000_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 3)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_001_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy after run (attempt 2); discarding it
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 3)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 4)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 5)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 6)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 7)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 8)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 9)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 10)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 11)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 12)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_002_f64 1T no valid run (attempt 13)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_002_f64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 4)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 5)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 6)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 7)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 8)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 9)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 10)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 11)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 12)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 13)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_002_f64 8T no valid run (attempt 14)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_004_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_004_f64 8T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_004_f64 8T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_004_f64 8T no valid run (attempt 4)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_005_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_014_f64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_014_f64 4T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_014_f64 4T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_014_f64 4T no valid run (attempt 4)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 3)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_018_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 3); discarding it
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_020_f64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_020_f64 4T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 3)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 2); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 3)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_027_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_029_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_037_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_037_f64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_037_f64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_037_f64 4T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_037_f64 4T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_037_f64 4T no valid run (attempt 4)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_037_f64 4T no valid run (attempt 5)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 3)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 4)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 5)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy after run (attempt 3); discarding it
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 6)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 7)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy after run (attempt 3); discarding it
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 8)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 9)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 10)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 11)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 12)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 13)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 14)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 15)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 16)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 17)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 18)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 19)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 20)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 21)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 22)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 23)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 24)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 25)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 26)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 27)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 28)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 29)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 30)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b2_m2048_n2048_k2048_f64 1T no valid run (attempt 31)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 2); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 3)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: large_b1_m4096_n4096_k4096_c64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 3)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 4)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 5)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: large_b64_m256_n1024_k64_c64 1T no valid run (attempt 6)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: large_b64_m1024_n64_k256_c64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: large_b64_m1024_n64_k256_c64 4T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 2)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 idle before and after (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 1)
+pinned.sh: cpus 8 busy before run (attempt 1); waiting
+pinned.sh: cpus 8 busy before run (attempt 2); waiting
+pinned.sh: cpus 8 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8
+drive.sh: gemm_batched_000_f64 1T no valid run (attempt 2)
+pinned.sh: cpus 8 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy after run (attempt 1); discarding it
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 4)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 5)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 6)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 7)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 8)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 9)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 10)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 11)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 12)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 13)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 14)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 15)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 16)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 17)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 18)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 19)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 20)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 21)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 22)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 23)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 24)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 25)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 26)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 27)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 28)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 29)
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11
+drive.sh: gemm_batched_000_f64 4T no valid run (attempt 30)
+pinned.sh: cpus 8,9,10,11 idle before and after (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_000_f64 8T no valid run (attempt 1)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_000_f64 8T no valid run (attempt 2)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_000_f64 8T no valid run (attempt 3)
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 1); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 2); waiting
+pinned.sh: cpus 8,9,10,11,12,13,14,15 busy before run (attempt 3); waiting
+pinned.sh: no valid run on cpus 8,9,10,11,12,13,14,15
+drive.sh: gemm_batched_000_f64 8T no valid run (attempt 4)
